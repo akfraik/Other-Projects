@@ -1,12 +1,13 @@
-'''new analysis that uses both occupancy and individual records to estimate
-an average population size across sites 
-'''
+### Base code for the new analysis that uses both occupancy and individual records to estimate
+## an average population size across sites
+
 
 npath = 'C:/Users/anfac/Dropbox/SmallMammal/A_analysis/new/'
 main = pd.read_csv(npath+'site_stats.csv') #this is the main data set holding site attributes
 names = main.Plot_Name.tolist()
-#these next 2 data sets contain the detection probabilities for neotoma and peromyscus
-# for neighborhoodsa and years. These distributions will be used to estimate population size
+
+### These next 2 data sets contain the detection probabilities for neotoma and peromyscus
+## for neighborhoodsa and years. These distributions will be used to estimate population size
 
 idr = individual detection rates
 
